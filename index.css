@@ -9,7 +9,7 @@
 }
 
 .container {
-	max-width: 1170px;
+	max-width: 1180px;
 	padding: 0 15px;
 	margin: 20px auto;
 }
@@ -98,4 +98,10 @@ img {
 	width: 0;
 	margin: auto;	
 	transition: 1s;
+}
+
+@media (max-width: 1920px){
+	.container {
+		max-width: 1080px;		
+	}
 }
