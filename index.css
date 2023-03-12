@@ -1,0 +1,96 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 20px auto;
+}
+
+.container-header {
+	font-size: 36px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.container-wrapper {
+	color: blue;
+}
+
+.container-wrapper:hover {
+	color: black;
+	cursor: pointer;
+}
+
+.item {
+	width: 100%;
+}
+
+.item:hover .image img {
+	width: 70%;
+	transition: 1s;
+}
+
+.item:hover .header i {
+	transform: rotate(45deg);
+	transition: 0.5s;
+}
+
+#meme-1:checked~.header, 
+#meme-2:checked~.header,
+#meme-3:checked~.header, 
+#meme-4:checked~.header, 
+#meme-5:checked~.header{
+	color: black;
+}
+
+#meme-1:checked~.image img,
+#meme-2:checked~.image img,
+#meme-3:checked~.image img,
+#meme-4:checked~.image img,
+#meme-5:checked~.image img {
+	width: 70%;
+}
+
+#meme-1,
+#meme-2,
+#meme-3,
+#meme-4,
+#meme-5 {
+	display: none;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+.text {
+	font-size: 24px;
+}
+
+.fa-solid {
+	transition: 0.5s;
+}
+
+.fa-plus {
+}
+
+.image {
+	display: flex;		
+}
+
+img {
+	display: block;
+	width: 0;
+	margin: auto;	
+	transition: 1s;
+}
