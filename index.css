@@ -25,25 +25,8 @@
 	cursor: pointer;
 }
 
-.container-wrapper:hover {
-	color: black;
-	cursor: pointer;
-}
-
 .item {
-	cursor: pointer;
-
-	
-}
-
-.item:hover .image img {
-	width: 70%;
-	transition: 1s;
-}
-
-.item:hover .header i {
-	transform: rotate(45deg);
-	transition: 0.5s;
+	cursor: pointer;	
 }
 
 #meme-1:checked~.header, 
@@ -99,14 +82,30 @@ img {
 	margin: auto;	
 	transition: 1s;
 }
+@media (hover: hover) {
+	.item:hover .image img {
+		width: 70%;
+		transition: 1s;
+	}
+	
+	.item:hover .header i {
+		transform: rotate(45deg);
+		transition: 0.5s;
+	}
 
-@media (max-width: 1920px){
+	.container-wrapper:hover {
+		color: black;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 1920px) {
 	.container {
 		max-width: 1080px;		
 	}
 }
 
-@media (max-width: 820px){
+@media (max-width: 820px) {
 	.container {
 		max-width: 800px;		
 	}
@@ -118,7 +117,7 @@ img {
 	}
 }
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
 	.container {
 		max-width: 300px;		
 	}
